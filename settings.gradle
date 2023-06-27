@@ -1,0 +1,4 @@
+rootProject.name = 'IT-Step-Homework'
+
+include '01-lesson'
+

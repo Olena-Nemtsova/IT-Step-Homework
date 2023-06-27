@@ -1,0 +1,15 @@
+
+*.class
+build
+out
+
+.gradle
+
+.idea
+.iml
+/libs/
+classes/
+
+*.log
+
+hs_err_pid*
