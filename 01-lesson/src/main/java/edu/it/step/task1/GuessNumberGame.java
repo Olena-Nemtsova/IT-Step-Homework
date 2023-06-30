@@ -10,9 +10,6 @@ public class GuessNumberGame {
             I guessed a number from 1 to 100, you have 10 attempts to guess it.
             During the game I'll give you hints :)
             """;
-    private static final String ERROR = """
-            Error! Input must be integer, please, try again
-            """;
     private static final String WON = """
             You won !
             """;

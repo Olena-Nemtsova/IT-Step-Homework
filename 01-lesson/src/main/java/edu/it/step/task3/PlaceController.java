@@ -3,7 +3,6 @@ package edu.it.step.task3;
 import edu.it.step.util.AnswerManager;
 import edu.it.step.util.PrintManager;
 import edu.it.step.util.RandomNumberGenerator;
-
 import java.util.Arrays;
 
 public class PlaceController {
