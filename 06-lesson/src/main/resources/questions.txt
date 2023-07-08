@@ -1,0 +1,4 @@
+What color is the sun?;green;black;violet;yellow
+How many paws does a cat have?;3;1;5;4
+Earth is it?;comet;star;satellite;planet
+Parrot is it?;insect;beast;plant;bird
