@@ -1,0 +1,6 @@
+Bob entered the chat
+[21:01:27] Bob: Hi!
+John entered the chat
+[21:02:15] John: Hi all!
+John left the chat
+Bob left the chat
