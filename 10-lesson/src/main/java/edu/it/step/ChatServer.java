@@ -14,9 +14,8 @@ public class ChatServer {
     private static final int PORT = 5555;
     private static final int HISTORY_SIZE = 10;
     private static final String HISTORY_FILE = "10-lesson/src/main/resources/chat.txt";
-
-    private static List<String> chatHistory = Collections.synchronizedList(new ArrayList<>());
-    private static List<ClientHandler> clients = Collections.synchronizedList(new ArrayList<>());
+    private static final List<String> chatHistory = Collections.synchronizedList(new ArrayList<>());
+    private static final List<ClientHandler> clients = Collections.synchronizedList(new ArrayList<>());
 
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
@@ -74,7 +73,6 @@ public class ChatServer {
 
     private static class ClientHandler implements Runnable {
         private final Socket clientSocket;
-        private String clientName;
 
         public ClientHandler(Socket socket) {
             this.clientSocket = socket;
@@ -87,8 +85,7 @@ public class ChatServer {
                     PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true)
             ) {
                 writer.println("Enter your name:");
-                clientName = reader.readLine();
-                System.out.println("Client " + clientName + " joined.");
+                String clientName = reader.readLine();
 
                 for (String message : chatHistory) {
                     writer.println(message);
