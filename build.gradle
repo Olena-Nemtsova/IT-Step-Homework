@@ -30,6 +30,7 @@ allprojects {
         implementation 'org.aspectj:aspectjweaver:1.9.21'
 
         implementation 'org.hibernate.orm:hibernate-core:6.4.2.Final'
+        implementation 'org.springframework.data:spring-data-jpa:3.2.2'
 
         implementation 'org.postgresql:postgresql:42.5.1'
     }
